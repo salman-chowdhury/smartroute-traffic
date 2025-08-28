@@ -1,0 +1,42 @@
+{
+  "functions": {
+    "api/incidents.ts": {
+      "maxDuration": 30
+    },
+    "api/routes.ts": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/traffic/incidents",
+      "destination": "/api/incidents"
+    },
+    {
+      "source": "/api/traffic/routes",
+      "destination": "/api/routes"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
