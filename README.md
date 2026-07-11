@@ -1,6 +1,6 @@
 # SmartRoute: Local Traffic Companion
 
-A **simple, fast, world-class website** designed for commuters in **Brisbane's St Lucia, Indooroopilly, Toowong**, and scalable to **Greater Brisbane & South East Queensland**. SmartRoute is a **companion layer** to navigation apps that enhances context without replacing turn-by-turn navigation.
+A responsive traffic companion prototype designed for commuters in **Brisbane's St Lucia, Indooroopilly and Toowong**, with a layout that can support broader South East Queensland coverage. SmartRoute adds local traffic context without replacing turn-by-turn navigation.
 
 ![SmartRoute Dashboard](./docs/screenshot.png)
 
